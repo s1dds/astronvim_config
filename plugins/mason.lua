@@ -11,6 +11,12 @@ return {
         "dockerls",
         "docker_compose_language_service",
         "powershell_es",
+        "bashls",
+        "pyright",
+        "ruff_lsp",
+        "tsserver",
+        "jsonls",
+        "intelephense",
       },
     },
   },
@@ -19,14 +25,26 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
-      ensure_installed = { "stylua" },
+      ensure_installed = {
+        "stylua",
+        "shellcheck",
+        "shfmt",
+        "isort",
+        "black",
+        "prettierd",
+      },
     },
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
-      -- ensure_installed = { "python" },
+      ensure_installed = {
+        "python",
+        "bash",
+        "js",
+        "php",
+      },
     },
   },
 }
